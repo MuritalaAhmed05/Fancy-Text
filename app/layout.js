@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine"></link>
+          <Toaster />
       <body className={inter.className}>{children}</body>
     </html>
   );
